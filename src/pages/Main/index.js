@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import { Keyboard, ActivityIndicator } from 'react-native'; // loading symbol.
 import AsyncStorage from '@react-native-community/async-storage';
@@ -24,7 +26,13 @@ import {
 export default class Main extends Component {
   static propTypes = {
     route: PropTypes.shape({
-      params: PropTypes.func,
+      params: PropTypes.object,
+    }).isRequired,
+  };
+
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func,
     }).isRequired,
   };
 
@@ -35,6 +43,7 @@ export default class Main extends Component {
   };
 
   async componentDidMount() {
+    // console.tron.log(this.props);
     const users = await AsyncStorage.getItem('users');
     if (users) {
       this.setState({ users: JSON.parse(users) });
@@ -115,6 +124,3 @@ export default class Main extends Component {
     );
   }
 }
-Main.navigationOptions = {
-  title: 'Usuários',
-};

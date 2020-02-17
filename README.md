@@ -196,9 +196,22 @@ yarn react-native run-android
        1. Todos as paginas dentro do createStackNavigator vem com a propriedade Navigation (e dentro tem o metodo navigate). Vide: console.tron.log(this.props)
        2. Main/index.js
           1. criar handleNavigate
-       3. Add prop-types para validar alguns erros de propriedades.
+       3. Add prop-types para validar alguns erros de propriedades. Incluir static proptypes no Mai/index.js
           ```
           yarn add prop-types
           ```
+
+   12. Buscando dados da API
+       1. User/index.js
+          1. Incluir component e transformar em class
+          2. componentDidMount;
+             1. Incluir console.tron.log(this.props)
+             2. api.get(`/users/${user.login}/starred`).
+             3. PropTypes para acabar com erros ESLint.
+
+   13. Listando Favoritos
+       1. User/index.js
+          1. Criar COntainer, HEader, Avatar, Name, Bio. e estilizar.
+          2. Criar Starts, OwnerAvatar, Info, Title, Author e estilizar.
 
 

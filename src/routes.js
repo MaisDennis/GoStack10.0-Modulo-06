@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { createAppContainer } from 'react-navigation';
+// import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from '@react-navigation/stack';
-import { StyleSheet, View, Text } from 'react-native';
+
 import Main from './pages/Main';
 import User from './pages/User';
 
@@ -24,7 +24,7 @@ export default function Routes() {
         name="Main"
         component={Main}
         options={{
-          title: 'Overview',
+          title: 'Usuários',
           headerBackTitleVisible: false,
           headerTitleAlign: 'center',
           headerTintColor: '#FFF',
@@ -33,7 +33,46 @@ export default function Routes() {
           },
         }}
       ></Stack.Screen>
-      <Stack.Screen name="User" component={User} />
+      <Stack.Screen
+        name="User"
+        component={User}
+        options={{
+          title: 'Stars',
+          headerBackTitleVisible: false,
+          headerTitleAlign: 'center',
+          headerTintColor: '#FFF',
+          headerStyle: {
+            backgroundColor: '#7159c1',
+          },
+        }}
+      ></Stack.Screen>
     </Stack.Navigator>
   );
 }
+
+/*
+  <Stack.Screen>
+{props => {
+  <Stack.Screen
+    name="User"
+    component={User}
+    options={{ title: props.route }}
+  />;
+}}
+</Stack.Screen>
+
+
+ <Stack.Screen
+        name="User"
+        component={User}
+        options={{
+          title: 'Hello World',
+          headerBackTitleVisible: false,
+          headerTitleAlign: 'center',
+          headerTintColor: '#FFF',
+          headerStyle: {
+            backgroundColor: '#7159c1',
+          },
+        }}
+      ></Stack.Screen>
+*/
