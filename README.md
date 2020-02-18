@@ -17,7 +17,7 @@ Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lis
 
 ![Stars](https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Stars.png =100x20)
 
-<img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Main.png" alt="Main" width="150" height="auto">
+<img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Main.png" alt="Main" width="500" height="auto">
 ___
 
 ### Iniciando o React Native:
