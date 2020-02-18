@@ -1,3 +1,21 @@
+### Conceitos abordados:
+1. Iniciar um projeto React Native para mobile app.
+2. Utilização de ambiente Android.
+3. Incluir ESLint, Prettier & EditorConfig.
+4. debug via Reactotron.
+5. Navegação entre páginas: React Navigation.
+6. Estilização via Styled Components.
+7. Acessando dados de API do Github.
+8. Acessando localstorage do Google Chrome.
+
+### Desrição do projeto:
+
+Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lista de seus repositórios marcados com Star.
+
+![Main](https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Main.png)
+
+![Stars](https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Stars.png)
+
 ### Iniciando o React Native:
 
 Esse projeto foi desenvolvido para o ambiente mobile.
@@ -116,13 +134,30 @@ ___
          yarn add react-navigation/stack
          ```
       2. Segue as instruções no link.
-      3. Adicionar Main e User em routes via StackNavigator.
+      3. Adicionar Main e User em routes via StackNavigator. Os componentes devem ficar algo assim:
+          ```html
+            <Stack.Screen
+              name="Main"
+              component={Main}
+              options={{
+                title: 'Usuários',
+                headerBackTitleVisible: false,
+                headerTitleAlign: 'center',
+                headerTintColor: '#FFF',
+                headerStyle: {
+                  backgroundColor: '#7159c1',
+                },
+              }}
+            />
+         ```
+
       4. index.js: import routes depois do import reactotron para entrar no debug reactotron (console.tron).
 
 6. Configurando o StatusBar
    ```Javascript
    import { StatusBar } from 'react-native';
-    <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+
+  <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
    ```
 
 7. Styled Components
@@ -133,7 +168,7 @@ ___
 
 8. Estilizando formulário
     1. Main/index.js
-    2.
+    2. Acesso a MaterialIcons:
         ```
         yarn add react-native-vector-icons
         ```
@@ -153,9 +188,9 @@ ___
    1. Main/index.js
       1. Quando o usuario preencher os dados no placeholder e clicar no '+', vamos buscar os dados no github do usuario e adicionar num 'state'.
       2. Para isso, alteramos a function Main para class.
-      3. obs. no Input: add value e onCHangeText. Add returnKeyType e onSubmitEditing.
+      3. obs. no Input: add value e onChangeText. Add returnKeyType e onSubmitEditing.
       4. função handleAddUser. this.handleAddUser vai no SubmitButton e não no Form (React Native não tem Form).
-    2. API:
+    2. API (adicionar axios):
         ```
         yarn add axios
         ```
@@ -166,17 +201,20 @@ ___
 
 8. Estilizando a listagem
     1. List:
-        1. React Native não tem ul, li e não tem .map. RN ja tem List padrão com barra de rolagem, etc.
+        1. React Native não tem ul, li e não tem .map. React Native ja tem List padrão com barra de rolagem, etc.
         2. usar FlatList
     2. Main.index/js e Main/styles.js
 
 9. Loading e disabled
-    1. Main/index.js: import { Keyboard, ActivityIndicator } from 'react-native';
+    1. Main/index.js:
+        ```
+        import { Keyboard, ActivityIndicator } from 'react-native';
+        ```
     2. Incluir loading no state.
-    3.
+    3. Main/styles.js: Add opacity.
 
 10. Salvando no storage
-    1. React Native não tem API para localstorage
+    1. React Native não tem API para localstorage.
     ```
     yarn add @react-native-community/async-storage
     yarn react-native run-android

@@ -32,7 +32,7 @@ export default function Routes() {
             backgroundColor: '#7159c1',
           },
         }}
-      ></Stack.Screen>
+      />
       <Stack.Screen
         name="User"
         component={User}
@@ -45,7 +45,7 @@ export default function Routes() {
             backgroundColor: '#7159c1',
           },
         }}
-      ></Stack.Screen>
+      />
     </Stack.Navigator>
   );
 }
