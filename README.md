@@ -119,37 +119,37 @@ ___
       3. Adicionar Main e User em routes via StackNavigator.
       4. index.js: import routes depois do import reactotron para entrar no debug reactotron (console.tron).
 
-4. Configurando o StatusBar
+6. Configurando o StatusBar
    ```Javascript
    import { StatusBar } from 'react-native';
     <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
    ```
 
-5. Styled Components
+7. Styled Components
    ```
    yarn add styled-components
    ```
    1. Criar Main/styles.js
 
-6. Estilizando formulário
-  1. Main/index.js
-  2.
-      ```
-      yarn add react-native-vector-icons
-      ```
-  2. https://github.com/oblador/react-native-vector-icons
-      1. abrir pasta android/app/build.gradle
-      ```
-      project.ext.vectoricons = [
-      iconFontNames: [ 'MaterialIcons.ttf' ] // Name of the font files you want to copy
-      ]
-      apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-      ```
-  3. Main/index.js: import Icon from 'react-native-vector-icons/MaterialIcons'
-      1. Google -> react native vector icons -> github -> site na 1a linha:
-      2. https://oblador.github.io/react-native-vector-icons/
+8. Estilizando formulário
+    1. Main/index.js
+    2.
+        ```
+        yarn add react-native-vector-icons
+        ```
+    2. https://github.com/oblador/react-native-vector-icons
+        1. abrir pasta android/app/build.gradle
+        ```
+        project.ext.vectoricons = [
+        iconFontNames: [ 'MaterialIcons.ttf' ] // Name of the font files you want to copy
+        ]
+        apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+        ```
+    3. Main/index.js: import Icon from 'react-native-vector-icons/MaterialIcons'
+        1. Google -> react native vector icons -> github -> site na 1a linha:
+        2. https://oblador.github.io/react-native-vector-icons/
 
-7. Acessando API do Github
+9. Acessando API do Github
   1. Main/index.js
       1. Quando o usuario preencher os dados no placeholder e clicar no '+', vamos buscar os dados no github do usuario e adicionar num 'state'.
       2. Para isso, alteramos a function Main para class.
