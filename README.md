@@ -1,4 +1,3 @@
-
 ### Iniciando o React Native:
 
 Esse projeto foi desenvolvido para o ambiente mobile.
@@ -25,6 +24,26 @@ yarn react-native run-android
 ```
 obs. O aplicativo foi desenvolvido para o ambiente Android.
 
+___
+
+### Criando o projeto:
+
+1. Ambiente de desenvolvimento:
+   1. Instalar NodeJS, JDK e dependencias.
+   2. Instalar SDK do Android.
+   3. Instalar Genymotion (emulador de mobile Android).
+
+   1. Guideline: http://docs.rocketseat.dev
+   2. https://docs.rocketseat.dev/ambiente-react-native/android/linux
+
+2. Iniciando o projeto:
+   1. ```
+      yarn react-native init modulo06
+      ```
+   2. App.js
+      1. Remover comentarios, const, text que não seja "Welocme to React".
+      2. obs. Todos os elementos ja tem display: flex do css.
+
 3. ESLint, Prettier & EditorConfig
    1. Criar .editorconfig
    2. Add ESLint:
@@ -33,55 +52,11 @@ obs. O aplicativo foi desenvolvido para o ambiente Android.
    yarn eslint --init
    yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
    ```
-   .eslintrc.js
-   ```
-   module.exports = {
-    env: {
-    es6: true,
-    },
-    extends: [
-      'plugin:react/recommended',
-      'airbnb',
-      'prettier',
-      'prettier/react',
-    ],
-    globals: {
-      Atomics: 'readonly',
-      SharedArrayBuffer: 'readonly',
-    },
-    parser: 'babel-eslint',
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-      ecmaVersion: 2018,
-      sourceType: 'module',
-    },
-    plugins: [
-      'react',
-      'prettier'
-    ],
-    rules: {
-      'prettier/prettier': 'error',
-      'react/jsx-filename-extension': [
-        'warn',
-        {
-          extensions: ['.jsx', '.js']
-        }
-      ],
-      'import/prefer-default-export':'off',
-     },
-   };
-   ```
-   2. .prettierrc
-   ```
-   "singleQuote": true,
-   "trailingComma": 'es5';
-   ```
-   3. Reiniciar o bundle.
-   ```
-   yarn react-native start --reset-cache
-   ```
+   3. Criar .eslintrc.js
+
+   4. Criar .prettierrc
+
+   5. Reiniciar o bundle.
 
 4. Configurando o Reactotron
    1. Debugger pode causar problemas, portanto vamos usar o reactotron:
@@ -92,7 +67,7 @@ obs. O aplicativo foi desenvolvido para o ambiente Android.
       yarn add reactotron-react-native
       ```
     2. Criar src, src/index.js, src/config/ReactotronConfig.js
-       1. Trasnfere todo o codigo do App.js para src/index.js e deleta App.js
+       1. Transfere todo o codigo do App.js para src/index.js e deleta App.js
        2. modulo06/index.js: import App from './src';
        3. Adicionar ao .eslintrc.js em globals:
           ```
@@ -101,13 +76,17 @@ obs. O aplicativo foi desenvolvido para o ambiente Android.
        4. src/index.js: import './config/ReactotronConfig';
        5. Se não conectar o Reactotron:
           1. Se você tem o adb instalado na sua distro Linux provavelmente ele está diferente da versão do Genymotion.
+          2. Seguir o guideline:
              1. https://medium.com/@birobirobiro/erro-adb-devices-no-genymotion-react-native-735c15594ac6
-          2.  Redirecionamento de porta: Terminal: adb reverse tcp:9090 tcp:9090
-          3. yarn react-native start --reset-cache
-          3. teste: src/index.js
-          ```
-          console.tron.log('Hello World');
-          ```
+          3. Redirecionamento de porta: Terminal:
+             ```
+             adb reverse tcp:9090 tcp:9090
+             yarn react-native start --reset-cache
+             ```
+          4. teste: src/index.js
+             ```
+             console.tron.log('Hello World');
+             ```
 
 
 
