@@ -1,5 +1,5 @@
 
-<h3>Iniciando o React Native:<h3>
+### Iniciando o React Native:
 
 Esse projeto foi desenvolvido para o ambiente mobile.
 No desenvolvimento do projeto foi usado o emulador mobile: Genymotion.
