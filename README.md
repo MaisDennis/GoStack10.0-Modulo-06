@@ -150,30 +150,30 @@ ___
         2. https://oblador.github.io/react-native-vector-icons/
 
 9. Acessando API do Github
-  1. Main/index.js
+   1. Main/index.js
       1. Quando o usuario preencher os dados no placeholder e clicar no '+', vamos buscar os dados no github do usuario e adicionar num 'state'.
       2. Para isso, alteramos a function Main para class.
       3. obs. no Input: add value e onCHangeText. Add returnKeyType e onSubmitEditing.
       4. função handleAddUser. this.handleAddUser vai no SubmitButton e não no Form (React Native não tem Form).
     2. API:
-    ```
-    yarn add axios
-    ```
-      1. Criar src/services/api.js
-      2. import ao handleAddUser.
+        ```
+        yarn add axios
+        ```
+        1. Criar src/services/api.js
+        2. import ao handleAddUser.
     3. import { Keyboard } from 'react-native';
-      1. Keyboard.dismiss();
+        1. Keyboard.dismiss();
 
 8. Estilizando a listagem
-  1. List:
-      1. React Native não tem ul, li e não tem .map. RN ja tem List padrão com barra de rolagem, etc.
-      2. usar FlatList
-  2. Main.index/js e Main/styles.js
+    1. List:
+        1. React Native não tem ul, li e não tem .map. RN ja tem List padrão com barra de rolagem, etc.
+        2. usar FlatList
+    2. Main.index/js e Main/styles.js
 
 9. Loading e disabled
-  1. Main/index.js: import { Keyboard, ActivityIndicator } from 'react-native';
-  2. Incluir loading no state.
-  3.
+    1. Main/index.js: import { Keyboard, ActivityIndicator } from 'react-native';
+    2. Incluir loading no state.
+    3.
 
 10. Salvando no storage
     1. React Native não tem API para localstorage
@@ -189,21 +189,21 @@ ___
     2. Main/index.js
       1. criar handleNavigate
     3. Add prop-types para validar alguns erros de propriedades. Incluir static proptypes no Mai/index.js
-      ```
-      yarn add prop-types
-      ```
+        ```
+        yarn add prop-types
+        ```
 
 12. Buscando dados da API
     1. User/index.js
-      1. Incluir component e transformar em class
-      2. componentDidMount;
-          1. Incluir console.tron.log(this.props)
-          2. api.get(`/users/${user.login}/starred`).
-          3. PropTypes para acabar com erros ESLint.
+        1. Incluir component e transformar em class
+        2. componentDidMount;
+            1. Incluir console.tron.log(this.props)
+            2. api.get(`/users/${user.login}/starred`).
+            3. PropTypes para acabar com erros ESLint.
 
 13. Listando Favoritos
     1. User/index.js
-      1. Criar COntainer, HEader, Avatar, Name, Bio. e estilizar.
-      2. Criar Starts, OwnerAvatar, Info, Title, Author e estilizar.
+        1. Criar COntainer, HEader, Avatar, Name, Bio. e estilizar.
+        2. Criar Starts, OwnerAvatar, Info, Title, Author e estilizar.
 
 
