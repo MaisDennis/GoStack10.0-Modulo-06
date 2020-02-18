@@ -137,14 +137,14 @@ ___
         ```
         yarn add react-native-vector-icons
         ```
-    2. https://github.com/oblador/react-native-vector-icons
+    3. https://github.com/oblador/react-native-vector-icons
         1. abrir pasta android/app/build.gradle
-        ```
-        project.ext.vectoricons = [
-        iconFontNames: [ 'MaterialIcons.ttf' ] // Name of the font files you want to copy
-        ]
-        apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-        ```
+            ```
+            project.ext.vectoricons = [
+            iconFontNames: [ 'MaterialIcons.ttf' ] // Name of the font files you want to copy
+            ]
+            apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+            ```
     3. Main/index.js: import Icon from 'react-native-vector-icons/MaterialIcons'
         1. Google -> react native vector icons -> github -> site na 1a linha:
         2. https://oblador.github.io/react-native-vector-icons/
