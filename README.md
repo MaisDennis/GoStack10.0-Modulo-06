@@ -12,11 +12,13 @@ ___
 ### Desrição do projeto:
 
 Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lista de seus repositórios marcados com Star.
+
 <div display="flex" flex-direction="row">
-<img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Main.png" alt="Main" width="300" height="auto">
+<img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Main.png" alt="Main" width="300" height="auto" margin-right="50">
 
 <img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Stars.png" alt="Stars" width="300" height="auto">
 </div>
+
 ___
 
 ### Iniciando o React Native:
