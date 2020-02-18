@@ -18,7 +18,7 @@ Redirecionamento de porta para o uso do debugger: Reactotron.
 ```
 adb reverse tcp:9090 tcp:9090 ( redirecionar à porta do Reactotron)
 ```
-Iiniciar o app:
+Iniciar o app:
 ```
 yarn react-native run-android
 ```
@@ -32,9 +32,9 @@ ___
    1. Instalar NodeJS, JDK e dependencias.
    2. Instalar SDK do Android.
    3. Instalar Genymotion (emulador de mobile Android).
-
-   1. Guideline: http://docs.rocketseat.dev
-   2. https://docs.rocketseat.dev/ambiente-react-native/android/linux
+   4. Guideline:
+      1. http://docs.rocketseat.dev
+      2. https://docs.rocketseat.dev/ambiente-react-native/android/linux
 
 2. Iniciando o projeto:
    1. ```
@@ -47,11 +47,11 @@ ___
 3. ESLint, Prettier & EditorConfig
    1. Criar .editorconfig
    2. Add ESLint:
-   ```
-   yarn add eslint -D
-   yarn eslint --init
-   yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
-   ```
+      ```
+      yarn add eslint -D
+      yarn eslint --init
+      yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+      ```
    3. Criar .eslintrc.js
 
    4. Criar .prettierrc
@@ -61,11 +61,11 @@ ___
 4. Configurando o Reactotron
    1. Debugger pode causar problemas, portanto vamos usar o reactotron:
       1. Google: Reactotron
-		  2. https://github.com/infinitered/reactotron/releases
+		  2. Link: https://github.com/infinitered/reactotron/releases
 		  3. Download and Install: reactotron-app_2.17.1_amd64.deb
-      ```
-      yarn add reactotron-react-native
-      ```
+         ```
+         yarn add reactotron-react-native
+         ```
     2. Criar src, src/index.js, src/config/ReactotronConfig.js
        1. Transfere todo o codigo do App.js para src/index.js e deleta App.js
        2. modulo06/index.js: import App from './src';
@@ -88,36 +88,33 @@ ___
              console.tron.log('Hello World');
              ```
 
-
-
 5. React Navigation
    1. src/index.js: Deletar tudo e deixar:
-   ```Javascript
-   import React from 'react';
-    import { View } from 'react-native';
-    import './config/Reactotron';
+      ```Javascript
+      import React from 'react';
+        import { View } from 'react-native';
+        import './config/Reactotron';
 
-   export default function App() {
-    return <View />;
-   }
-   ```
+      export default function App() {
+        return <View />;
+      }
+      ```
    2. Criar a pasta src/pages e:
       1. pages/Main/index.js
       2. pages/User/index.js
-      3.
-   ```
-   yarn add react-navigation
-   yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
-   ```
+      3. ```
+         yarn add react-navigation
+         yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+         ```
    obs. Ver a última vesão de instalação de dependencias React Native project.
-   https://reactnavigation.org/docs/en/getting-started.html
-   obs. Foi necessário instalar a nova versão de: yarn add @react-navigation/native https://reactnavigation.org/docs/pt-BR/getting-started.html
+   https://reactnavigation.org/docs/en/getting-started.html.
+   obs. Foi necessário instalar a nova versão de: yarn add @react-navigation/native https://reactnavigation.org/docs/pt-BR/getting-started.html.
 
    3. Criar src/routes.js
       1. Vamos usar navigation by stack: https://reactnavigation.org/docs/en/hello-react-navigation.html
-      ```
-      yarn add react-navigation-stack
-      ```
+         ```
+         yarn add react-navigation/stack
+         ```
       2. Segue as instruções no link.
       3. Adicionar Main e User em routes via StackNavigator.
       4. index.js: import routes depois do import reactotron para entrar no debug reactotron (console.tron).
