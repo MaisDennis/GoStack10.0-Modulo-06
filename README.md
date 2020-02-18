@@ -1,13 +1,29 @@
 
-Iniciando o React Native:
+<h3>Iniciando o React Native:<h3>
+
+Esse projeto foi desenvolvido para o ambiente mobile.
+No desenvolvimento do projeto foi usado o emulador mobile: Genymotion.
+Instruções para a instalação do Genymotion:
+https://docs.rocketseat.dev/ambiente-react-native/android/emulador
+Iiniciar o GenyMotion:
 ```
 ./genymotion (na pasta genymotion)
+```
+Dentro da pasta do projeto, Para iniciar o bundle:
+```
 yarn react-native start
 ou
 yarn react-native start --reset-cache
+```
+Redirecionamento de porta para o uso do debugger: Reactotron.
+```
 adb reverse tcp:9090 tcp:9090 ( redirecionar à porta do Reactotron)
+```
+Iiniciar o app:
+```
 yarn react-native run-android
 ```
+obs. O aplicativo foi desenvolvido para o ambiente Android.
 
 3. ESLint, Prettier & EditorConfig
    1. Criar .editorconfig
