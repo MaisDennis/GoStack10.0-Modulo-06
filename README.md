@@ -15,7 +15,7 @@
 6. Estilização via Styled Components.
 7. Acessando dados de API do Github.
 8. Acessando localstorage do Google Chrome.
-___
+
 
 ##  2. Desrição do projeto
 
@@ -27,7 +27,7 @@ Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lis
 <img src="https://github.com/MaisDennis/GoStack10.0-Modulo-06/blob/master/src/assets/Stars.png" alt="Stars" width="300" height="auto">
 </div>
 
-___
+
 
 ##  3. Iniciando o React Native:
 
@@ -54,7 +54,7 @@ Iniciar o app:
 yarn react-native run-android
 ```
 obs. O aplicativo foi desenvolvido para o ambiente Android.
-___
+
 
 ##  4. Criando o projeto
 
