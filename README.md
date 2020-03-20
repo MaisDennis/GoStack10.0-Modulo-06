@@ -1,4 +1,12 @@
-### Conceitos abordados:
+# GoStack 10.0 || Módulo 06
+
+* [1. Conceitos abordados](#1-conceitos-abordados)
+* [2. Descrição do projeto](#2-descrição-do-projeto)
+* [3. Iniciando o React Native](#3-iniciando-o-react-native)
+* [4. Criando o projeto](#4-criando-o-projeto)
+
+##  1. Conceitos abordados
+
 1. Iniciar um projeto React Native para mobile app.
 2. Utilização de ambiente Android.
 3. Incluir ESLint, Prettier & EditorConfig.
@@ -9,7 +17,7 @@
 8. Acessando localstorage do Google Chrome.
 ___
 
-### Desrição do projeto:
+##  2. Desrição do projeto
 
 Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lista de seus repositórios marcados com Star.
 
@@ -21,7 +29,7 @@ Um aplicativo mobile para a busca de usuário de Github e ver o perfil e uma lis
 
 ___
 
-### Iniciando o React Native:
+##  3. Iniciando o React Native:
 
 Esse projeto foi desenvolvido para o ambiente mobile.
 No desenvolvimento do projeto foi usado o emulador mobile: Genymotion.
@@ -48,7 +56,7 @@ yarn react-native run-android
 obs. O aplicativo foi desenvolvido para o ambiente Android.
 ___
 
-### Criando o projeto:
+##  4. Criando o projeto
 
 1. Ambiente de desenvolvimento:
    1. Instalar NodeJS, JDK e dependencias.
